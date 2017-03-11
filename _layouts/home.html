@@ -10,16 +10,14 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-
+      <li class="post-in-list">
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }} </a>
         </h2>
         <span class="post-meta">{{ post.date | localize: "%d %B %Y" }}</span>
-
         {{ post.content }}
       </li>
     {% endfor %}
-  </ul>
 
+  </ul>
 </div>

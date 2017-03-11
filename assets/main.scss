@@ -37,3 +37,10 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 @import "minima";
+
+.post-in-list {
+  border: 1px solid $grey-color-light;
+  // min-height: 56px;
+  // position: relative;
+  padding: 0.4em;
+}
