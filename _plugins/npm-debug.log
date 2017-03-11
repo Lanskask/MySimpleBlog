@@ -1,0 +1,170 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'robcrocombe/jekyll-post' ]
+2 info using npm@2.15.11
+3 info using node@v4.7.0
+4 verbose install initial load of /usr/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/lib/package.json
+6 silly cache add args [ 'robcrocombe/jekyll-post', null ]
+7 verbose cache add spec robcrocombe/jekyll-post
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'robcrocombe/jekyll-post',
+8 silly cache add   scope: null,
+8 silly cache add   name: null,
+8 silly cache add   rawSpec: 'robcrocombe/jekyll-post',
+8 silly cache add   spec: 'github:robcrocombe/jekyll-post',
+8 silly cache add   type: 'hosted',
+8 silly cache add   hosted:
+8 silly cache add    { type: 'github',
+8 silly cache add      ssh: 'git@github.com:robcrocombe/jekyll-post.git',
+8 silly cache add      sshUrl: 'git+ssh://git@github.com/robcrocombe/jekyll-post.git',
+8 silly cache add      httpsUrl: 'git+https://github.com/robcrocombe/jekyll-post.git',
+8 silly cache add      gitUrl: 'git://github.com/robcrocombe/jekyll-post.git',
+8 silly cache add      shortcut: 'github:robcrocombe/jekyll-post',
+8 silly cache add      directUrl: 'https://raw.githubusercontent.com/robcrocombe/jekyll-post/master/package.json' } }
+9 verbose addRemoteGit caching robcrocombe/jekyll-post
+10 verbose addRemoteGit robcrocombe/jekyll-post is a repository hosted by github
+11 silly tryGitProto attempting to clone git://github.com/robcrocombe/jekyll-post.git
+12 silly tryClone cloning robcrocombe/jekyll-post via git://github.com/robcrocombe/jekyll-post.git
+13 verbose tryClone git-github-com-robcrocombe-jekyll-post-git-7edd5912 not in flight; caching
+14 verbose correctMkdir /home/a1/.npm/_git-remotes correctMkdir not in flight; initializing
+15 verbose makeDirectory /home/a1/.npm/_git-remotes creation not in flight; initializing
+16 silly makeDirectory /home/a1/.npm/_git-remotes uid: 1000 gid: 1000
+17 info git [ 'clone',
+17 info git   '--template=/home/a1/.npm/_git-remotes/_templates',
+17 info git   '--mirror',
+17 info git   'git://github.com/robcrocombe/jekyll-post.git',
+17 info git   '/home/a1/.npm/_git-remotes/git-github-com-robcrocombe-jekyll-post-git-7edd5912' ]
+18 verbose mirrorRemote robcrocombe/jekyll-post git clone git://github.com/robcrocombe/jekyll-post.git
+19 verbose correctMkdir /home/a1/.npm/_git-remotes correctMkdir not in flight; initializing
+20 verbose setPermissions robcrocombe/jekyll-post set permissions on /home/a1/.npm/_git-remotes/git-github-com-robcrocombe-jekyll-post-git-7edd5912
+21 verbose resolveHead robcrocombe/jekyll-post original treeish: master
+22 info git [ 'rev-list', '-n1', 'master' ]
+23 silly resolveHead robcrocombe/jekyll-post resolved treeish: 55c947e9d6642afe6402a9e58d12f5959b72d4aa
+24 verbose resolveHead robcrocombe/jekyll-post resolved Git URL: git://github.com/robcrocombe/jekyll-post.git#55c947e9d6642afe6402a9e58d12f5959b72d4aa
+25 silly resolveHead Git working directory: /tmp/npm-25794-77f14e13/git-cache-6a57a17182fb/55c947e9d6642afe6402a9e58d12f5959b72d4aa
+26 info git [ 'clone',
+26 info git   '/home/a1/.npm/_git-remotes/git-github-com-robcrocombe-jekyll-post-git-7edd5912',
+26 info git   '/tmp/npm-25794-77f14e13/git-cache-6a57a17182fb/55c947e9d6642afe6402a9e58d12f5959b72d4aa' ]
+27 verbose cloneResolved robcrocombe/jekyll-post clone Cloning into '/tmp/npm-25794-77f14e13/git-cache-6a57a17182fb/55c947e9d6642afe6402a9e58d12f5959b72d4aa'...
+27 verbose cloneResolved done.
+28 info git [ 'checkout', '55c947e9d6642afe6402a9e58d12f5959b72d4aa' ]
+29 verbose checkoutTreeish robcrocombe/jekyll-post checkout Note: checking out '55c947e9d6642afe6402a9e58d12f5959b72d4aa'.
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+29 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+29 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+29 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish   git checkout -b new_branch_name
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish HEAD is now at 55c947e... Merge pull request #1 from robcrocombe/update/refactor-lint
+30 verbose addLocalDirectory /home/a1/.npm/jekyll-post/1.0.0/package.tgz not in flight; packing
+31 verbose correctMkdir /home/a1/.npm correctMkdir not in flight; initializing
+32 verbose tar pack [ '/home/a1/.npm/jekyll-post/1.0.0/package.tgz',
+32 verbose tar pack   '/tmp/npm-25794-77f14e13/git-cache-6a57a17182fb/55c947e9d6642afe6402a9e58d12f5959b72d4aa' ]
+33 verbose tarball /home/a1/.npm/jekyll-post/1.0.0/package.tgz
+34 verbose folder /tmp/npm-25794-77f14e13/git-cache-6a57a17182fb/55c947e9d6642afe6402a9e58d12f5959b72d4aa
+35 verbose addLocalTarball adding from inside cache /home/a1/.npm/jekyll-post/1.0.0/package.tgz
+36 verbose correctMkdir /home/a1/.npm correctMkdir not in flight; initializing
+37 verbose addRemoteGit data._from: robcrocombe/jekyll-post
+38 verbose addRemoteGit data._resolved: git://github.com/robcrocombe/jekyll-post.git#55c947e9d6642afe6402a9e58d12f5959b72d4aa
+39 silly cache afterAdd jekyll-post@1.0.0
+40 verbose afterAdd /home/a1/.npm/jekyll-post/1.0.0/package/package.json not in flight; writing
+41 verbose correctMkdir /home/a1/.npm correctMkdir not in flight; initializing
+42 verbose afterAdd /home/a1/.npm/jekyll-post/1.0.0/package/package.json written
+43 silly install resolved [ { name: 'jekyll-post',
+43 silly install resolved     version: '1.0.0',
+43 silly install resolved     description: 'Draft, edit, publish Jekyll posts from the command line',
+43 silly install resolved     main: 'post.js',
+43 silly install resolved     bin: { post: './post.js' },
+43 silly install resolved     engines: { node: '>6.x.x' },
+43 silly install resolved     scripts:
+43 silly install resolved      { lint: 'eslint --format=node_modules/eslint-codeframe-formatter .',
+43 silly install resolved        test: 'echo "Error: no test specified" && exit 1' },
+43 silly install resolved     repository:
+43 silly install resolved      { type: 'git',
+43 silly install resolved        url: 'git+https://github.com/robcrocombe/jekyll-post.git' },
+43 silly install resolved     author:
+43 silly install resolved      { name: 'Rob Crocombe',
+43 silly install resolved        email: 'me@robcrocombe.com',
+43 silly install resolved        url: 'http://robcrocombe.com' },
+43 silly install resolved     license: 'MIT',
+43 silly install resolved     bugs: { url: 'https://github.com/robcrocombe/jekyll-post/issues' },
+43 silly install resolved     homepage: 'https://github.com/robcrocombe/jekyll-post#readme',
+43 silly install resolved     devDependencies:
+43 silly install resolved      { eslint: '^3.12.2',
+43 silly install resolved        'eslint-codeframe-formatter': '^1.0.2',
+43 silly install resolved        'eslint-config-airbnb-base': '^11.0.0',
+43 silly install resolved        'eslint-plugin-import': '^2.2.0' },
+43 silly install resolved     dependencies:
+43 silly install resolved      { commander: '^2.9.0',
+43 silly install resolved        'fs-extra': '^1.0.0',
+43 silly install resolved        'gray-matter': '^2.1.0',
+43 silly install resolved        moment: '^2.17.1',
+43 silly install resolved        'readline-sync': '^1.4.5' },
+43 silly install resolved     gitHead: '55c947e9d6642afe6402a9e58d12f5959b72d4aa',
+43 silly install resolved     readme: '# jekyll-post\nDraft, edit, publish Jekyll posts from the command line.\n\nInstallation: `npm install -g robcrocombe/jekyll-post`\n\nUsage: `post <command> "post name"`\n\nOptions:\n\n```\n  -h, --help           output usage information\n  -V, --version        output the version number\n  d, draft <name>      create a draft post\n  p, publish [name]    publish all drafts, or a single draft\n  u, unpublish <name>  unpublish a post\n```\n\nJekyll-Post can be ran from the root of any Jekyll directory containing `_drafts` and `_posts`.\n',
+43 silly install resolved     readmeFilename: 'README.md',
+43 silly install resolved     _id: 'jekyll-post@1.0.0',
+43 silly install resolved     _shasum: '37c7c614d127b01915ff47a30e38cf41603c59c6',
+43 silly install resolved     _from: 'robcrocombe/jekyll-post',
+43 silly install resolved     _resolved: 'git://github.com/robcrocombe/jekyll-post.git#55c947e9d6642afe6402a9e58d12f5959b72d4aa' } ]
+44 info install jekyll-post@1.0.0 into /usr/lib
+45 info installOne jekyll-post@1.0.0
+46 verbose installOne of jekyll-post to /usr/lib not in flight; installing
+47 verbose correctMkdir /home/a1/.npm/_locks correctMkdir not in flight; initializing
+48 verbose lock using /home/a1/.npm/_locks/jekyll-post-9ee8d003e863b505.lock for /usr/lib/node_modules/jekyll-post
+49 warn engine jekyll-post@1.0.0: wanted: {"node":">6.x.x"} (current: {"node":"4.7.0","npm":"2.15.11"})
+50 silly install write writing jekyll-post 1.0.0 to /usr/lib/node_modules/jekyll-post
+51 verbose unbuild lib/node_modules/jekyll-post
+52 silly gentlyRm /usr/lib/node_modules/jekyll-post is being purged from base /usr
+53 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/jekyll-post
+54 verbose tar unpack /home/a1/.npm/jekyll-post/1.0.0/package.tgz
+55 verbose tar unpacking to /usr/lib/node_modules/jekyll-post
+56 silly gentlyRm /usr/lib/node_modules/jekyll-post is being purged
+57 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/jekyll-post
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 error tar.unpack untar error /home/a1/.npm/jekyll-post/1.0.0/package.tgz
+60 verbose unlock done using /home/a1/.npm/_locks/jekyll-post-9ee8d003e863b505.lock for /usr/lib/node_modules/jekyll-post
+61 verbose fstream_path /usr/lib/node_modules/jekyll-post
+62 verbose fstream_type Directory
+63 verbose fstream_class DirWriter
+64 verbose stack Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/jekyll-post'
+64 verbose stack     at Error (native)
+65 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+65 verbose fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+65 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+66 verbose cwd /home/a1/Yandex.Disk/0Programming/7_Sites_FrontBack-End/11____Blogs/Jekyll/blog/_plugins
+67 error Linux 3.16.0-4-amd64
+68 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "robcrocombe/jekyll-post"
+69 error node v4.7.0
+70 error npm  v2.15.11
+71 error path /usr/lib/node_modules/jekyll-post
+72 error code EACCES
+73 error errno -13
+74 error syscall mkdir
+75 error Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/jekyll-post'
+75 error     at Error (native)
+75 error  { [Error: EACCES: permission denied, mkdir '/usr/lib/node_modules/jekyll-post']
+75 error   errno: -13,
+75 error   code: 'EACCES',
+75 error   syscall: 'mkdir',
+75 error   path: '/usr/lib/node_modules/jekyll-post',
+75 error   fstream_type: 'Directory',
+75 error   fstream_path: '/usr/lib/node_modules/jekyll-post',
+75 error   fstream_class: 'DirWriter',
+75 error   fstream_stack:
+75 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+75 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+75 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+76 error Please try running this command again as root/Administrator.
+77 verbose exit [ -13, true ]
+78 verbose unbuild lib/node_modules/jekyll-post
+79 silly gentlyRm /usr/lib/node_modules/jekyll-post is being purged from base /usr
+80 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/jekyll-post
