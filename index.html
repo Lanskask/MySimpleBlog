@@ -44,7 +44,7 @@ title: Mainpage
     {% if page_num == paginator.page %}
       <em>{{ page_num }}</em>
     {% elsif page_num == 1 %}
-      <a href="{{ site.baseurl | replace: '//', '/' }}">{{ page_num }}</a>
+      <a href="{{ '/' | append: site.baseurl | replace: '//', '/' }}">{{ page_num }}</a>
     {% else %}
       <a href="{{ site.url | append: site.paginate_path | replace: '//', '/' | replace: ':num', page_num }}">
         {{ page_num }}</a>
