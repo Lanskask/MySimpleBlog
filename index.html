@@ -40,11 +40,12 @@ title: Mainpage
     <span>&larr;</span>
   {% endif %}
 
+  <!-- <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a> -->
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <em>{{ page }}</em>
     {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
       <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
@@ -58,7 +59,7 @@ title: Mainpage
 </div>
 {% endif %}
 
-<!-- Fix P 16 -->
+<!-- Fix P 17 -->
 <!-- {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
