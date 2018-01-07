@@ -32,12 +32,12 @@ title: Mainpage
   {% endif %}
 </div> -->
 
-<!-- {% if paginator.total_pages > 1 %}
+{% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;</a>
   {% else %}
-    <span>&laquo; Prev</span>
+    <span>&larr;</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -51,14 +51,15 @@ title: Mainpage
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr;</a>
   {% else %}
-    <span>Next &raquo;</span>
+    <span>&rarr;</span>
   {% endif %}
 </div>
-{% endif %} -->
-<!-- Fix P 15 -->
-{% if paginator.total_pages > 1 %}
+{% endif %}
+
+<!-- Fix P 16 -->
+<!-- {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path | site.baseurl | replace: '//', '/' }}">
@@ -78,14 +79,14 @@ title: Mainpage
     {% elsif paginator.previous_page == 1 %}
       <a href="{{ site.baseurl | replace: '//', '/' }}">{{ page }}</a>
     {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&rarr;</a>
+    <a href="{{ paginator.next_page_path | replace: '//', '/' }}">&rarr;</a>
   {% else %}
     <span>&rarr;</span>
   {% endif %}
 </div>
-{% endif %}
+{% endif %} -->
