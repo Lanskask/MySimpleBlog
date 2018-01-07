@@ -35,7 +35,7 @@ title: Mainpage
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;</a>
+    <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&larr;</a>
   {% else %}
     <span>&larr;</span>
   {% endif %}
